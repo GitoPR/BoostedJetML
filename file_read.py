@@ -21,7 +21,7 @@ jr = allflat.to_numpy()
 #print(jr.shape)
 
 jetreg_r = np.resize(jr, (154668, 3,3))
-print(jetreg_r.shape)
+#print(jetreg_r.shape)
 
 #print(jetreg_r[1])
 #print(jr.shape)
@@ -62,6 +62,13 @@ reco_eta = tree["recoEta_1"].array().to_numpy()
 #Read the reco_phi 
 reco_phi =tree["recoPhi_1"].array().to_numpy()
 #print(reco_phi.shape)
+
+l1Eta_1 = tree["l1Eta_1"].array().to_numpy()
+#print(l1Eta_1.shape)
+
+l1Phi_1 = tree["l1Phi_1"].array().to_numpy()
+#print(l1Phi_1.shape)
+
 
 
 #Write all the arrays into the H5 file.
